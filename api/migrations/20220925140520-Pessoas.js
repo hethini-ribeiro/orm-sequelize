@@ -14,7 +14,9 @@ module.exports = {
       nome: Sequelize.STRING,
       ativo: Sequelize.BOOLEAN,
       role: Sequelize.STRING,
-      email: Sequelize.STRING
+      email: Sequelize.STRING,
+      createdAt: Sequelize.DATE,
+      updatedAt: Sequelize.DATE
     });
   },
 
