@@ -7,6 +7,7 @@
 - npx sequelize-cli db:create
 - npx sequelize-cli db:migrate
 - npx sequelize-cli db:migrate:undo
+- npx sequelize-cli migration:generate --name [name_of_your_migration]
 
 ## Seeders
 - npx sequelize-cli seed:generate --name [demo-pessoa]
