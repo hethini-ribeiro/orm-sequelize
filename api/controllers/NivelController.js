@@ -14,7 +14,7 @@ class NivelController {
     static async pegaUmNivel(req, res){
         const { id } = req.params
         try {
-            const umaNivel = await.database.Niveis.findOne({
+            const umaNivel = await database.Niveis.findOne({
                 where: {
                     id: Number(id)
                 }
