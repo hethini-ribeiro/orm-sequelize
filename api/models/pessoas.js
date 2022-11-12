@@ -10,7 +10,7 @@ module.exports = (Sequelize, DataTypes) => {
         role: DataTypes.STRING,
         createdAt: DataTypes.DATE,
         updatedAt: DataTypes.DATE
-    }, {});
+    }, { paranoid: true });
     Pessoas.associate = function(models) {
         Pessoas.hasMany(models.Turmas, {
             foreignKey: 'docente_id'

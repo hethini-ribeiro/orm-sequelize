@@ -28,7 +28,7 @@ class NivelController {
     static async criaNivel(req, res){
         const novoNivel = req.body;
         try {
-            const novoNivelCriado = await.database.Niveis.create(novoNivel);
+            const novoNivelCriado = await database.Niveis.create(novoNivel);
             return res.status(201).json(novoNivelCriado)
         } catch (error) {
             return res.status(500).json(error.message)
